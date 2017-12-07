@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/bin/python
 # -*- coding: utf-8 -*-
 
 import xbmc
@@ -26,3 +26,8 @@ def myNotifyWarning(message, header=None, time_=3000):
 
 def myNotifyInfo(message, header=None, time_=3000):
     myNotify(message, header, time_, xbmcgui.NOTIFICATION_INFO)
+
+def myLog(message, level=xbmc.LOGNOTICE):
+    """Log a message."""
+    output = "[nfoEDIT]: " + message
+    xbmc.log(msg=output, level=level)

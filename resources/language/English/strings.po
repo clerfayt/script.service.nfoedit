@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: XBMC-Addons\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
-"POT-Creation-Date: 2017-02-05 22:17+0000\n"
+"POT-Creation-Date: 2017-12-07 22:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE\n"
@@ -67,4 +67,36 @@ msgstr ""
 
 msgctxt "#30010"
 msgid "Value could not be changed."
+msgstr ""
+
+msgctxt "#30011"
+msgid "D O N E  /  E N D"
+msgstr ""
+
+msgctxt "#30012"
+msgid "New Element"
+msgstr ""
+
+msgctxt "#30013"
+msgid "'Clear element' (yes) or 'Do not change value' (no)?"
+msgstr ""
+
+msgctxt "#30014"
+msgid "Input the new element's tag name"
+msgstr ""
+
+msgctxt "#30015"
+msgid "Input the new element's text value"
+msgstr ""
+
+msgctxt "#30016"
+msgid "Did not change value."
+msgstr ""
+
+msgctxt "#30017"
+msgid "Did not add a new element."
+msgstr ""
+
+msgctxt "#30018"
+msgid "Finished."
 msgstr ""
