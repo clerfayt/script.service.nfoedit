@@ -100,3 +100,7 @@ msgstr ""
 msgctxt "#30018"
 msgid "Finished."
 msgstr ""
+
+msgctxt "#30019"
+msgid "Show existing NFO file's contents"
+msgstr ""

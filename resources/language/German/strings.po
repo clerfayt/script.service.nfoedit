@@ -100,3 +100,7 @@ msgstr "Kein neues Element hinzugefügt."
 msgctxt "#30018"
 msgid "Finished."
 msgstr "Beendet."
+
+msgctxt "#30019"
+msgid "Show existing NFO file's contents"
+msgstr "Inahlt vorhandener NFO Datei anzeigen"

@@ -103,7 +103,7 @@ def writeXmlFile(filepath, xmlContents):
     return True
 
 
-mode = dlg.select(addonname, [transl(30001), transl(30002)])
+mode = dlg.select(addonname, [transl(30001), transl(30002), transl(30019)])
 
 if mode == 0:
     """ Edit """
@@ -125,5 +125,13 @@ elif mode == 1:
                 editNfoFile(nfoFile)
             elif createNfoFile(nfoFile, mediaType):
                 editNfoFile(nfoFile)
+
+elif mode == 2:
+    """ Show existing file's contents """
+    nfoFile = dlg.browseSingle(1, addonname, "files", ".nfo", False, False)
+    if nfoFile:
+        with file(nfoFile) as f: contents = f.read()
+        dlg.textviewer(os.path.split(nfoFile)[1], contents)
+    
 
 #elif mode == -1: #cancel
