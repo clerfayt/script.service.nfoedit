@@ -1,2 +1,8 @@
+0.2.0
+- Implemented possibility to edit existing nfo files
+- Implemented possibility to create new nfo files
+- Implemented possibility to view existing nfo files' contents
+- Added setting for AskBeforeSave
+
 0.1.0
 - Initial release

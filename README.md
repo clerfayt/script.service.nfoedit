@@ -5,15 +5,16 @@ nfoEdit is an addon that lets you edit nfo files.
 
 Current Features
 ----------------
+* Edit the values of existing xml-elements in existing nfo files
+* Create new second-level xml-elements in existing nfo files
+* Create new empty nfo files for existing video files
+* View contents of existing nfo files
 
 
 Future Features
 ----------------
-* Edit the values of existing xml-elements in existing nfo files
-* Create new second-level xml-elements in existing nfo files
-* Create new empty nfo files for existing video files
 * Add contextmenu entry for videos to directly edit the corresponding nfo file
-* Implement custom editor to directly manifpulate nfo/text files
+* Implement custom texteditor to directly manifpulate nfo/text files
 
 
 Requirements / Platforms

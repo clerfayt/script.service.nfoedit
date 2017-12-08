@@ -62,12 +62,10 @@ def editNfoFile(nfoFile):
                             tag.firstChild.data = newValue
                             break
                 else:
-                    myNotifyError(transl(30010))
-                # overwrite nfo file
-                #TODO ask save yes/no
-                writeXmlFile(nfoFile, dom_.toprettyxml(indent="\t", encoding="UTF-8"))
+                    myNotifyError(transl(30010))  #"Could not change value."
+                saveChanges(nfoFile, dom_)
             else:
-                myNotify(transl(30016))
+                myNotify(transl(30016))  #"Did not change value."
         elif elem2edit > 0:  #last => new element
             newElemName = dlg.input(transl(30014))  #"New tag name?"
             if newElemName:
@@ -76,16 +74,21 @@ def editNfoFile(nfoFile):
                     newElem_dom = dom_.createElement(newElemName)
                     newElem_dom.appendChild(dom_.createTextNode(newValue))
                     doc.appendChild(newElem_dom)
-                    # overwrite nfo file
-                    #TODO ask save yes/no
-                    writeXmlFile(nfoFile, dom_.toprettyxml(indent="\t", encoding="UTF-8"))
+                    saveChanges(nfoFile, dom_)  
                 else:
-                    myNotify(transl(30017))  #"Did not change value."
+                    myNotify(transl(30017))  #"Did not add new element."
             else:
-                myNotify(transl(30017))  #"Did not change value."
+                myNotify(transl(30017))  #"Did not add new element."
         else:
-            myNotify(transl(30018))  #"Finished"
+            myNotify(transl(30018), sound=False)  #"Finished"
             cancelled = True
+
+
+def saveChanges(filepath, dom_):
+    """Save the given dom to file. Maybe ask before saving."""
+    if not MySettings.askBeforeSave() or dlg.yesno(addonname, transl(30021)):
+        # overwrite nfo file
+        writeXmlFile(filepath, dom_.toprettyxml(encoding="UTF-8"))
 
 
 def writeXmlFile(filepath, xmlContents):
