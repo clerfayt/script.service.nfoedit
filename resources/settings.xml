@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
     <setting id="askBeforeSave" type="bool" label="30020" default="false" />
+    <setting id="contextMenuItemHidden" type="bool" label="30022" default="false" />
 </settings>

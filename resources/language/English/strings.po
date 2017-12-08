@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: nfoEdit
 # Addon id: script.service.nfoedit
-# Addon version: 0.2.0
+# Addon version: 0.3.0
 # Addon Provider: clerfayt
 msgid ""
 msgstr ""
@@ -111,4 +111,28 @@ msgstr ""
 
 msgctxt "#30021"
 msgid "Save changes?"
+msgstr ""
+
+msgctxt "#30022"
+msgid "Hide context menu item [requires restart of Kodi]"
+msgstr ""
+
+msgctxt "#30023"
+msgid "Edit / Create NFO file"
+msgstr ""
+
+msgctxt "#30024"
+msgid "No FileNameAndPath property found!\nTry changing to listview."
+msgstr ""
+
+msgctxt "#30025"
+msgid "Show help"
+msgstr ""
+
+msgctxt "#30026"
+msgid "Help: common tag names"
+msgstr ""
+
+msgctxt "#30027"
+msgid "<title>  <plot>  <aired>  <tag>  <runtime>  <genre>\nEpisodes only: <showtitle>"
 msgstr ""

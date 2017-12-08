@@ -5,17 +5,19 @@ import xbmc
 import xbmcaddon
 import xbmcgui
 
+ADDON = xbmcaddon.Addon()
+ADDONNAME = ADDON.getAddonInfo('name')
+
 def transl(translationId):
     """Returns the translated string with the given id."""
-    return xbmcaddon.Addon().getLocalizedString(translationId).encode("utf-8")
+    return ADDON.getLocalizedString(translationId).encode("utf-8")
 
 def myNotify(message, header=None, time_=3000, icon=None, sound=True):
     """Send notification. If header==None the addon-name is used.
        If icon==None the addon-icon is used.
     """
-    _addon = xbmcaddon.Addon()
-    header = _addon.getAddonInfo('name') if not header else header
-    icon   = _addon.getAddonInfo('icon') if not icon else icon
+    header = ADDONNAME if not header else header
+    icon   = ADDON.getAddonInfo('icon') if not icon else icon
     xbmcgui.Dialog().notification(header, message, icon, time_, sound)
 
 def myNotifyError(message, header=None, time_=3000, sound=True):
@@ -38,3 +40,6 @@ class MySettings:
     @staticmethod
     def askBeforeSave():
         return MySettings._addon.getSetting("askBeforeSave") == "true"
+    @staticmethod
+    def contextMenuItemHidden():
+        return MySettings._addon.getSetting("contextMenuItemHidden") == "true"

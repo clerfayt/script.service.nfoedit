@@ -1,3 +1,7 @@
+0.3.0
+- Context menu entry for videos to directly edit corresponding nfo files
+- Show common tag names as help dialog
+
 0.2.0
 - Implemented possibility to edit existing nfo files
 - Implemented possibility to create new nfo files

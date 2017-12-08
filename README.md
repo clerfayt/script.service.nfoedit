@@ -9,11 +9,11 @@ Current Features
 * Create new second-level xml-elements in existing nfo files
 * Create new empty nfo files for existing video files
 * View contents of existing nfo files
+* Provide contextmenu entry for videos to directly edit the corresponding nfo file
 
 
 Future Features
 ----------------
-* Add contextmenu entry for videos to directly edit the corresponding nfo file
 * Implement custom texteditor to directly manifpulate nfo/text files
 
 

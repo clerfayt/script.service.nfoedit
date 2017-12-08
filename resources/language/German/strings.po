@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: nfoEdit
 # Addon id: script.service.nfoedit
-# Addon version: 0.2.0
+# Addon version: 0.3.0
 # Addon Provider: clerfayt
 msgid ""
 msgstr ""
@@ -103,7 +103,7 @@ msgstr "Beendet."
 
 msgctxt "#30019"
 msgid "Show existing NFO file's contents"
-msgstr "Inahlt vorhandener NFO Datei anzeigen"
+msgstr "Inhalt vorhandener NFO Datei anzeigen"
 
 msgctxt "#30020"
 msgid "Ask before overwriting the contents of a file?"
@@ -112,3 +112,27 @@ msgstr "Fragen bevor Dateiinhalte überschrieben werden?"
 msgctxt "#30021"
 msgid "Save changes?"
 msgstr "Änderungen speichern?"
+
+msgctxt "#30022"
+msgid "Hide context menu item [requires restart of Kodi]"
+msgstr "Kontextmenü Eintrag verbergen [erfordert Kodi Neustart]"
+
+msgctxt "#30023"
+msgid "Edit / Create NFO file"
+msgstr "NFO editieren / erstellen"
+
+msgctxt "#30024"
+msgid "No FileNameAndPath property found!\nTry changing to listview."
+msgstr "FileNameAndPath Eigenschaft nicht gefunden!\nVersuch in die Listen-Ansicht zu wechseln."
+
+msgctxt "#30025"
+msgid "Show help"
+msgstr "Hilfe anzeigen"
+
+msgctxt "#30026"
+msgid "Help: common tag names"
+msgstr "Hilfe: Gebräuchliche tag Namen"
+
+msgctxt "#30027"
+msgid "<title>  <plot>  <aired>  <tag>  <runtime>  <genre>\nEpisodes only: <showtitle>"
+msgstr "<title>  <plot>  <aired>  <tag>  <runtime>  <genre>\nNur für episodes: <showtitle>"
