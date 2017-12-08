@@ -4,7 +4,7 @@
 import xbmc
 import xbmcgui
 
-from resources.lib.helpers import *
+from resources.lib.utils import *
 
 
 class MyMonitor(xbmc.Monitor):

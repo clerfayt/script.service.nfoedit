@@ -15,6 +15,7 @@ Current Features
 Future Features
 ----------------
 * Implement custom texteditor to directly manifpulate nfo/text files
+* Support complex second level (i.e. thrid, fourth, ... level) elements
 
 
 Requirements / Platforms

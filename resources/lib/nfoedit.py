@@ -8,11 +8,14 @@ import os.path
 import xml.dom
 import xml.dom.minidom
 
-from .helpers import *
+from .utils import *
 
 
 class NfoEdit():
     """Class handling the process of editing an NFO file."""
+
+    INDENT_STR = "\t"
+
     def __init__(self):
         self.dlg = xbmcgui.Dialog()
 
@@ -73,7 +76,9 @@ class NfoEdit():
                     if newValue:
                         newElem_dom = dom_.createElement(newElemName)
                         newElem_dom.appendChild(dom_.createTextNode(newValue))
+                        doc.appendChild(dom_.createTextNode(NfoEdit.INDENT_STR))
                         doc.appendChild(newElem_dom)
+                        doc.appendChild(dom_.createTextNode("\n"))
                         self.saveChanges(nfoFile, dom_)
                     else:
                         myNotify(transl(30017))  #"Did not add new element."
@@ -90,7 +95,7 @@ class NfoEdit():
         """Save the given dom to file. Maybe ask before saving."""
         if not MySettings.askBeforeSave() or self.dlg.yesno(ADDONNAME, transl(30021)):
             # overwrite nfo file
-                self.writeXmlFile(filepath, dom_.toprettyxml(encoding="UTF-8"))
+                self.writeXmlFile(filepath, dom_.toxml(encoding="UTF-8"))
 
 
     def writeXmlFile(self, filepath, xmlContents):

@@ -5,7 +5,7 @@ import sys
 import xbmc
 import xbmcgui
 
-from resources.lib.helpers import *
+from resources.lib.utils import *
 from resources.lib.nfoedit import *
 
 
