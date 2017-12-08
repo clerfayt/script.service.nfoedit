@@ -134,5 +134,9 @@ msgid "Help: common tag names"
 msgstr ""
 
 msgctxt "#30027"
-msgid "<title>  <plot>  <aired>  <tag>  <runtime>  <genre>\nEpisodes only: <showtitle>"
+msgid "<title>  <tagline>  <plot>  <aired>\n<runtime>  <tag>  <genre>\nEpisodes only: <showtitle>  <season>"
+msgstr ""
+
+msgctxt "#30028"
+msgid "Error while parsing the nfo file!"
 msgstr ""

@@ -7,6 +7,7 @@ import xbmc
 import os.path
 import xml.dom
 import xml.dom.minidom
+import xml.parsers.expat
 
 from .utils import *
 
@@ -31,7 +32,12 @@ class NfoEdit():
         cancelled = False
         while not cancelled:
             # parse nfo file (get elements with values)
-            dom_ = xml.dom.minidom.parse(nfoFile)
+            try:
+                dom_ = xml.dom.minidom.parse(nfoFile)
+            except xml.parsers.expat.ExpatError:
+                myNotifyError(transl(30028))  #"Error while parsing"
+                cancelled = True
+                break
             doc = dom_.documentElement
             elements = [("::", " " + transl(30011) + "  :::")]  # "D O N E  /  E N D"
 
